@@ -170,7 +170,22 @@ p {
 header .logo {
   width: 60px;
   height: 60px;
+}
 
+header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+header nav a {
+  margin-right: 100px;
+  text-decoration: none;
+  color: black;
+}
+
+header nav a:last-child {
+  margin-right: 40px;
 }
 
 .jumbotron {
@@ -217,6 +232,9 @@ header p {
 button {
   padding: 10px;
   width: 300px;
+  margin-top: 10px;
+  border: 1px solid black;
+  font-size: 15px;
 }
 
 
