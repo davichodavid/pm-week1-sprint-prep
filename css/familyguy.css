@@ -3,83 +3,185 @@
    License: none (public domain)
 */
 /* ****************************************************************************   RESET AND GLOBAL STYLES    */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
+
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Oswald', sans-serif;
-    background:#fcfcee
+html,
+body {
+  height: 100%;
+  font-family: 'Oswald', sans-serif;
+  background: #fcfcee
 }
 
-h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
-    font-family: 'Oswald', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-family: 'Oswald', sans-serif;
 }
 
 p {
-    line-height: 1.4;
+  line-height: 1.4;
 }
 
 .container {
-    width: 800px;
-    margin: 0 auto;
+  width: 800px;
+  margin: 0 auto;
 }
+
 /* *************************************************************************   NAV STYLES HERE   */
 
 
 header .logo {
   width: 60px;
   height: 60px;
-  
+
 }
 
+.jumbotron {
+  margin: 20px 0;
+}
+
+header p {
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
 
 
 
@@ -90,14 +192,32 @@ header .logo {
 
 /* ****************************************************************************   FAMILY GUY PAGE STYLES HERE   */
 
-
-
-.middle-image{
-  width: 330px;
-  height: 250px;
+.first-section,
+.second-section {
+  display: flex;
+  margin-bottom: 40px;
 }
 
+.first-section div,
+.second-section div {
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+}
 
+.middle-image {
+  width: 330px;
+  height: 250px;
+  margin-bottom: 10px;
+}
+
+.third-section {
+  margin-bottom: 30px;
+}
+
+button {
+  padding: 10px;
+  width: 300px;
+}
 
 
 
@@ -113,26 +233,27 @@ header .logo {
 
 
 /* *******************************************************************************  FOOTER STYLES HERE  */
- .familyguy-footer-content {
+.familyguy-footer-content {
   margin-bottom: 20px;
   padding: 20px;
 }
 
 footer {
-    width: 100%;
-    background: white;
+  width: 100%;
+  background: white;
+  margin-bottom: 30px;
 }
 
 footer nav {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 2%;
+  font-size: 14px;
 }
 
 footer nav a {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
