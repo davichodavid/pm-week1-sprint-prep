@@ -209,6 +209,11 @@ p {
 
 .bottom-content {
   display: flex;
+  margin-bottom: 40px;
+}
+
+.bottom-content p {
+  margin-right: 20px;
 }
 
 .middle-content {
@@ -241,8 +246,9 @@ footer nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 2%;
+  padding: 20px 0;
   font-size: 14px;
+  margin-bottom: 20px;
 }
 
 footer nav a {
